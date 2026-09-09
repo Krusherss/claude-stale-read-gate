@@ -1,0 +1,4 @@
+__pycache__/
+.omc/
+.claude/
+*.pyc
