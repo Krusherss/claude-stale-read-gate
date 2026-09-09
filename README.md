@@ -55,18 +55,30 @@ Add to `~/.claude/settings.json`:
     "PostToolUse": [
       {
         "matcher": "Read|Write|Edit",
-        "hooks": ["python ~/.claude/hooks/read_ledger_recorder.py"]
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ~/.claude/hooks/read_ledger_recorder.py"
+          }
+        ]
       }
     ],
     "PreToolUse": [
       {
         "matcher": "Write",
-        "hooks": ["python ~/.claude/hooks/stale_read_write_gate.py"]
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ~/.claude/hooks/stale_read_write_gate.py"
+          }
+        ]
       }
     ]
   }
 }
 ```
+
+Copy both hook scripts and `lib/read_ledger.py` into `~/.claude/hooks/` before wiring.
 
 ## Tests
 
