@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"C:/Users/Maxle/Desktop/github portfolio/claude-decaying-flags\\\" && python -m pytest tests/ -q 2>&1\",\"description\":\"Test decaying-flags\"}",
+  "error": "Exit code 1\nEEEEEEEEEEEEEEE                                                          [100%]\r\n=================================== ERRORS ====================================\r\n________________ ERROR at setup of test_missing_flag_inactive _________________\r\n\r\ntmp_path = WindowsPath('C:/Users/Maxle/AppData/Local/Temp/pytest-of-Maxle/pytest-5418/test_missing_flag_inactive0')\r\nmonkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000015792D4E380>\r\n\r\n    @pytest.fixture\r\n    def ft(tmp_path, monk...",
+  "timestamp": "2026-09-09T18:59:10.439Z",
+  "retry_count": 2
+}
